@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, p, ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-bg{
+    background-color: black;
+}
+
+.header{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-side{
+    display: flex;
+    gap: 40px;
+}
+
+.header-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.logo{
+    max-width: 48px;
+}
+
+.header a{
+    color: white;
+}
+
+main{
+    height: 90vh;
+    background: url(./img/imagem-principal.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero{
+    background-color: white;
+    padding: 40px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.icones{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.icones img{
+    width: 24px;
+}
+
+.icone{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.icone p{
+    text-align: center;
+}
+
+.hero h1{
+    padding-top: 32px;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero p{
+    color: rgb(78, 78, 78);
+}
+
+.buttom{
+    background-color: black;
+    color: white;
+    padding: 16px 24px;
+    place-self: start;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.buttom:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+.link2{
+    color: rgb(78, 78, 78);
+    text-decoration: underline;
+}
+
+.section-bg{
+    height: 40vh;
+    background: url(./img/predio-icarly.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.section{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 80px;
+}
+
+.section-conteudo h1{
+    font-size: 2.5rem;
+}
+
+.section-conteudo p{
+    color: rgb(78, 78, 78);
+}
+
+.section-conteudo a{
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    place-self: start;
+    border-radius: 8px;
+}
+
+.section-bg2{
+    margin-top: 60px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+.section2 h1{
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.sides{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sides h2{
+    margin-bottom: 24px;
+}
+
+.sides p{
+    max-width: 60ch;
+    margin-bottom: 24px
+}
+
+
+.imgs{
+    width: 540px;
+    height: 540px;
+    background: url(./img/motorista1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imgs2{
+    width: 540px;
+    height: 540px;
+    background: url(./img/rotatoria.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.footer{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer a{
+    color: #ccc;
+}
+
+.links-footer{
+    padding-top: 32px;
+    display: flex;
+    gap: 200px;
+}
+
+.categoria h2{
+    margin-bottom: 16px;
+}
+
+.categoria ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+@media(max-width:1300px){
+    .sides{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width:1200px){
+    .links-footer{
+        flex-direction: column;
+    }
+
+    .section-bg{
+        height: 40vh;
+        background-image: none;
+    }
+
+    .section2 h1{
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:800px){
+    .comecar{
+        display: none;
+    }
+}
+
+@media(max-width:560px){
+    .section-bg{
+        display: none;
+    }
+}
+
+@media(max-width:450px){
+    .header{
+        display: block;
+    }
+}
